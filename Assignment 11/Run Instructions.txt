@@ -1,0 +1,18 @@
+INPUT VALIDATION
+
+Name : Sudharsan Srinivasan
+UTA ID: 1001755919
+
+The program is done using Python and run in Command Line Interface.
+
+_________________________________________________________________________________________________________
+STEPS FOR EXECUTION:
+_________________________________________________________________________________________________________
+
+1. Navigate to the folder containing the InputValidation.py file
+
+2. Run the below command to start compiling and execution of the code.
+
+	sudo python3 InputValidation.py
+
+Note: sudo command is used to ensure that the user has root privileges. If the user already has them, then you don't necessarily have to use it, but it is advisable to use.

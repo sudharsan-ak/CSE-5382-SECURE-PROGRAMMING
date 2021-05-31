@@ -1,0 +1,5 @@
+Hello Professor Jones,
+
+I'm Sudharsan Srinivasan (1001755919) currently in my final semester of my Masters in Computer Science. I did my undergrad in Computer Science at CEG, Anna University in India. My majors here in UTA are Software Engineering and Databases. 
+
+I intend to get some basic understanding of topics such as Error Handling, XML and Web Application Issues. Since my undergrad was also on Computer Science and I also have some basic idea on these topics, it will serve me well if this coursework gives me some more insights into those concepts.

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.2.3" sequence="1" timestamp="1619149500589" analysisTimestamp="1619149498439" release="">
+  <Project projectName="Static code Analysis">
+    <Jar>C:\Users\AK\eclipse-workspace\Static code Analysis\bin</Jar>
+    <AuxClasspathEntry>C:\Users\AK\eclipse-workspace\Static code Analysis\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_291\lib\rt.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_291\lib\jce.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\AK\eclipse-workspace\Static code Analysis\src</SrcDir>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="48" end="83" startBytecode="0" endBytecode="324" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader"/>
+    </Method>
+    <SourceLine classname="SimpleWebServer" start="49" end="49" startBytecode="12" endBytecode="12" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    <SourceLine classname="SimpleWebServer" start="49" end="49" startBytecode="12" endBytecode="12" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="48" end="83" startBytecode="0" endBytecode="324" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.OutputStreamWriter" name="&lt;init&gt;" signature="(Ljava/io/OutputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.OutputStreamWriter"/>
+    </Method>
+    <SourceLine classname="SimpleWebServer" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    <SourceLine classname="SimpleWebServer" start="53" end="53" startBytecode="27" endBytecode="27" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="320" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader"/>
+    </Method>
+    <SourceLine classname="SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    <SourceLine classname="SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="NP_DEREFERENCE_OF_READLINE_VALUE" priority="2" rank="15" abbrev="NP" category="STYLE" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="processRequest" signature="(Ljava/net/Socket;)V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="48" end="83" startBytecode="0" endBytecode="324" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <LocalVariable name="request" register="4" pc="49" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="SimpleWebServer" start="63" end="63" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    <SourceLine classname="SimpleWebServer" start="63" end="63" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="320" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <Class classname="java.io.Reader" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Reader"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="SimpleWebServer" start="103" end="103" startBytecode="47" endBytecode="47" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="SimpleWebServer" start="104" end="104" startBytecode="51" endBytecode="51" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SimpleWebServer" start="105" end="105" startBytecode="57" endBytecode="57" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SimpleWebServer" start="116" end="116" startBytecode="69" endBytecode="69" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SimpleWebServer" start="117" end="117" startBytecode="75" endBytecode="75" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SimpleWebServer" start="121" end="121" startBytecode="99" endBytecode="99" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="SimpleWebServer" start="122" end="122" startBytecode="108" endBytecode="108" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Reader x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="56" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader"/>
+    </Type>
+    <SourceLine classname="SimpleWebServer" start="103" end="103" startBytecode="42" endBytecode="42" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    <SourceLine classname="SimpleWebServer" start="103" end="103" startBytecode="42" endBytecode="42" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="3" rank="20" abbrev="REC" category="STYLE" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="serveFile" signature="(Ljava/io/OutputStreamWriter;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="87" end="122" startBytecode="0" endBytecode="320" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <SourceLine classname="SimpleWebServer" start="106" end="106" startBytecode="60" endBytecode="60" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    <SourceLine classname="SimpleWebServer" start="106" end="106" startBytecode="60" endBytecode="60" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1">
+    <Class classname="SimpleWebServer">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Class>
+    <Method classname="SimpleWebServer" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="SimpleWebServer" start="28" end="30" startBytecode="0" endBytecode="67" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Method>
+    <Field classname="SimpleWebServer" name="dServerSocket" signature="Ljava/net/ServerSocket;" isStatic="true">
+      <SourceLine classname="SimpleWebServer" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    </Field>
+    <SourceLine classname="SimpleWebServer" start="29" end="29" startBytecode="14" endBytecode="14" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+    <SourceLine classname="SimpleWebServer" start="29" end="29" startBytecode="14" endBytecode="14" sourcefile="SimpleWebServer.java" sourcepath="SimpleWebServer.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 22 Apr 2021 22:44:29 -0500" total_classes="1" referenced_classes="22" total_bugs="8" total_size="54" num_packages="1" java_version="1.8.0_291" vm_version="25.291-b10" cpu_seconds="31.89" clock_seconds="213.20" peak_mbytes="1010.82" alloc_mbytes="1755.00" gc_seconds="0.04" priority_3="1" priority_2="3" priority_1="4">
+    <PackageStats package="" total_bugs="8" total_types="1" total_size="54" priority_3="1" priority_2="3" priority_1="4">
+      <ClassStats class="SimpleWebServer" sourceFile="SimpleWebServer.java" interface="false" size="54" bugs="8" priority_3="1" priority_2="3" priority_1="4"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="907" invocations="352" avgMicrosecondsPerInvocation="2577" maxMicrosecondsPerInvocation="39852" standardDeviationMicrosecondsPerInvocation="5939"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="358" invocations="2" avgMicrosecondsPerInvocation="179036" maxMicrosecondsPerInvocation="245604" standardDeviationMicrosecondsPerInvocation="66567"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="217" invocations="351" avgMicrosecondsPerInvocation="620" maxMicrosecondsPerInvocation="31467" standardDeviationMicrosecondsPerInvocation="2449"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="61" invocations="22" avgMicrosecondsPerInvocation="2791" maxMicrosecondsPerInvocation="26548" standardDeviationMicrosecondsPerInvocation="5541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.TestingGround" totalMilliseconds="53" invocations="1" avgMicrosecondsPerInvocation="53128" maxMicrosecondsPerInvocation="53128" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1619149500588" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
